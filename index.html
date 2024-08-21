@@ -9,12 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/ff056682ef.js" crossorigin="anonymous"></script>
 <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'button-primary': '#ABEF5F',
+            'button-primary-2': '#ABEF5F80',
           }
         }
       }
@@ -27,7 +29,59 @@
   </style>
 </head>
 <body class="manrope-font ">
+    <!-- header section start -->
     <header>
+        <nav class="w-11/12 mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              
+              <a class="btn btn-ghost text-3xl font-bold"> <i class="fa-solid fa-arrow-right text-black text-xl -rotate-45 bg-button-primary rounded-full"></i>  Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                <li class="font-bold"><a>Home</a></li>
+                <li class="text-gray-600"><a>Services</a></li>
+                <li class="text-gray-600"><a>Portfolio</a></li>
+                <li class="text-gray-600"><a>Blogs</a></li>
+                <li class="text-gray-600"><a>Contact Us</a></li>          
+              </ul>
+            </div>
+            <div class="navbar-end gap-5 ">
+             
+                <div class="text-lg hidden lg:block">
+                <button> <i class="fa-solid fa-magnifying-glass"></i></button>
+                <button><i class="fa-solid fa-cart-shopping"></i></button>                             
+                </div>    
+                <button class="lg:px-8 lg:py-4 px-2 py-1 hidden lg:block rounded-full lg:rounded-full font-medium text-black font-bold text-lg bg-button-primary">Book Consult  <i class="fa-solid fa-arrow-right text-white text-xl -rotate-45 bg-black rounded-full"></i></button>  
+              
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost text-lg lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow  text-lg font-medium right-0">
+                  <li class="font-bold"><a>Home</a></li>
+                  <li class="text-gray-600"><a>Services</a></li>
+                  <li class="text-gray-600"><a>Portfolio</a></li>
+                  <li class="text-gray-600"><a>Blogs</a></li>
+                  <li class="text-gray-600"><a>Contact Us</a></li>              
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <section class="">
+            <div>
+                <img class="mx-auto w-80 lg:w-auto" src="image/banner.png" alt="">
+            </div>
+            <div class="text-center">
+                <h1 class="lg:text-4xl md:text-3xl text-2xl font-bold mb-5">A barn house of this design has a <br> striking appearance</h1>
+                <p class="text-gray-500 lg:w-5/12 w-96 mx-auto mb-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring  weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class=" px-8 py-4 rounded-full font-lg text-black font-bold text-lg bg-button-primary-2">View Details  <i class="fa-solid fa-arrow-right text-black text-xl -rotate-45 bg-button-primary rounded-full"></i></button>
+            </div>
+            
+        </section>
 
     </header>
     <main>
